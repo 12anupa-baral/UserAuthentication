@@ -1,0 +1,25 @@
+
+.Container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .Container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .Container a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 4px;
+  }
+  
+  .Container a:hover {
+    background-color: #0056b3;
+  }
+  
