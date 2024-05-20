@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# User Authentication System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple user authentication system built with Node.js, Express.js, and MongoDB. It provides endpoints for user authentication, signup, profile update, and profile deletion.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User authentication: Allows users to authenticate by providing their email and password.
+- Signup: Allows users to create a new account by providing their email and password.
+- Profile Update: Allows users to update their profile information including name and password.
+- Profile Deletion: Allows users to delete their profile from the system.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js installed on your machine.
+- MongoDB installed and running locally or accessible via a cloud service.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone <repository-url>
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd userauth
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies using npm:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Set up your MongoDB connection:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Create a `.env` file in the root directory of the project.
+   - Add your MongoDB connection URI to the `.env` file:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+     ```env
+     MONGODB_URI=<your-mongodb-uri>
+     ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Start the server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Make sure the server is running.
+2. Use API testing tools like Postman to interact with the endpoints.
+3. Use the following endpoints:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - POST `/api/auth`: User authentication endpoint. Provide email and password in the request body.
+   - POST `/signup`: User signup endpoint. Provide email and password in the request body.
+   - PUT `/api/auth/update`: Profile update endpoint. Provide email, name, and password in the request body.
+   - DELETE `/api/auth/delete`: Profile deletion endpoint. Provide email in the request body.
 
-### Code Splitting
+## Flow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Home page contains two buttons for login and signup.
+2. Signup to register a user
+3. Use the credentials used to signup to be logged in.
+4. After logging in you will be redirected to welcome page.
+5. Welcome page contains a button to view your profile.
+6. Profile page contains a button to edit your profile as well as delete your profile.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the application.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize it further according to your project's specific details and requirements!

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import '../Style/Home.css';
+import '../Style/welcome.css';
 
 function Welcome() {
     const location=useLocation()

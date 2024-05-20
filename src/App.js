@@ -6,6 +6,7 @@ import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Profile from './Components/Profile';
 import Welcome from './Components/Welcome';
+import EditProfile from './Components/editProfile';
 
 const App = () => (
   <Router>
@@ -15,6 +16,7 @@ const App = () => (
       <Route path="/signup" element={<SignUp />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/welcome" element={<Welcome />} />
+      <Route path="/editProfile" element={<EditProfile/>} />
     </Routes>
   </Router>
 );

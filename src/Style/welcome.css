@@ -1,0 +1,23 @@
+
+.Welcome {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .Welcome h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .Welcome a {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .Welcome a:hover {
+    text-decoration: underline;
+  }
+  
