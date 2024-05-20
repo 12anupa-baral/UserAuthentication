@@ -44,7 +44,12 @@ This is a simple user authentication system built with Node.js, Express.js, and 
      ```
 
 5. Start the server:
-
+   Backend
+   ```bash
+   cd backend
+   node server.js
+   ```
+    Frontend
    ```bash
    npm start
    ```
